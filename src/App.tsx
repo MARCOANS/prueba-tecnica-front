@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import AppLayout from "./components/AppLayout";
+import SweetAlert2 from "react-sweetalert2";
+import { useSelector } from "react-redux";
+import { RootState } from "store/reducers";
 
 function App() {
+  const swalProps = useSelector((state: RootState) => state.sweetAlert);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppLayout />
+      <SweetAlert2 {...swalProps} />
     </div>
   );
 }

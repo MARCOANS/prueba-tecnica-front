@@ -1,38 +1,183 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background: #1890ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-content {
+  background-color: rgba(249, 249, 249, 1);
+  margin: 0;
+  min-height: 90vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-title {
+  background: white;
   display: flex;
-  flex-direction: column;
+  padding: 10px 10px 0px 20px;
+}
+
+.subdivisions-icon {
+  margin-left: 20px;
+  color: rgba(73, 197, 93, 0.9);
+  font-size: 15px;
+}
+
+.custom-tabs .ant-tabs-nav {
+  background-color: white;
+
+  padding: 0 20px;
+}
+
+.custom-tabpane {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.custom-tabs .ant-tabs-tab {
+  margin: 0;
+}
+
+.custom-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+}
+
+.custom-tabs .ant-tabs-ink-bar {
+  background-color: #1890ff;
+}
+
+.subtab {
+  background-color: transparent;
+  border: none;
+}
+
+.subtab-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtab-search-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 30vw;
+}
+
+.columns-select {
+  min-width: 150px;
+}
+
+.table-container {
+  padding: 16px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.total-text {
+  flex-grow: 1;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-pagination .ant-pagination-item {
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: all 0.3s;
+}
+
+.custom-pagination .ant-pagination-item a {
+  color: rgba(85, 81, 85, 1);
+}
+
+.custom-pagination .ant-pagination-item:hover {
+  border-color: #1890ff;
+  background: #ffffff;
+}
+
+.custom-pagination .ant-pagination-item:hover a {
+  color: rgba(85, 81, 85, 1);
+}
+
+.custom-pagination .ant-pagination-item-active {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.custom-pagination .ant-pagination-item {
+  background: #ffffff;
+}
+
+.custom-pagination .ant-pagination-item-active a {
+  color: rgba(85, 81, 85, 1);
+}
+
+.custom-pagination .ant-pagination-prev,
+.custom-pagination .ant-pagination-next {
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 4px;
+  margin: 0 4px;
+  transition: all 0.3s;
+}
+
+.custom-filter {
+  padding: 0;
+}
+
+.custom-filter-search {
+  padding: 20px 20px 0 20px;
+}
+
+.custom-filter-content {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0 20px;
+}
+
+.custom-filter-items {
+
+  padding: 0 20px;
+}
+
+.filter-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: solid 0.75px rgba(231, 231, 231, 1);
+}
+
+.custom-filter-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-filter-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-filter-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.custom-filter-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
