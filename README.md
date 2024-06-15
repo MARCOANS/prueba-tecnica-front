@@ -15,7 +15,7 @@ My App es una aplicación React creada utilizando Create React App. Utiliza Redu
 1. Clona este repositorio en tu máquina local.
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/MARCOANS/prueba-tecnica-front.git
    ```
 
 2. Navega al directorio del proyecto.
